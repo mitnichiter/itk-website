@@ -1555,7 +1555,5 @@ footer .container .links .left .text{
 }
 footer .container .links .left .logo{
     display: flex;
-    gap: 8px;
-    width: 100%;
-    height: fit-content;
+    gap: 12px;
 }
