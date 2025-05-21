@@ -1462,23 +1462,23 @@ nav .buttons .gsff:hover {
     color: #e4f3ff;
 }
 
-footer .mango {
+footer  {
     background: linear-gradient(178deg, #09203D 64.05%, #1956A3 242.38%);
     width: 100%;
     height: 577px;
 }
-footer .mango .container{
+footer  .container{
     width:1283px;
     margin: 0 auto;
 }
 
-footer .mango .container .newsletter {
+footer  .container .newsletter {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 64px 0;
 }
-footer .mango .container .newsletter h1{
+footer  .container .newsletter h1{
     color: #FFF;
 
 font-size: 28px;
@@ -1487,13 +1487,13 @@ font-weight: 700;
 line-height: 36px;
 }
 
-footer .mango .container .newsletter .newsletter-input {
+footer  .container .newsletter .newsletter-input {
     display: flex;
     gap: 8px;
 
 }
 
-footer .mango .container .newsletter .newsletter-input input[type="email"] {
+footer  .container .newsletter .newsletter-input input[type="email"] {
     padding: 9px 16px;
     border-radius: 10px;
     border: 1px solid #b3b3b36b;
@@ -1507,11 +1507,11 @@ footer .mango .container .newsletter .newsletter-input input[type="email"] {
 
 }
 
-footer .mango .container .newsletter .newsletter-input input::placeholder {
+footer  .container .newsletter .newsletter-input input::placeholder {
     color: #9bb4d3;
 }
 
-footer .mango .container .newsletter .newsletter-input button {
+footer  .container .newsletter .newsletter-input button {
     border: none;
     color: white;
     width: 147px;
@@ -1524,10 +1524,38 @@ footer .mango .container .newsletter .newsletter-input button {
     background: #1256AC;
 }
 
-footer .mango .container .newsletter .newsletter-input button:hover {
+footer  .container .newsletter .newsletter-input button:hover {
     background-color: #1664c4;
 }
-footer .mango .container hr{
+footer  .container hr{
     border-color: #ffffff2e;
     height: 1px;
+}
+
+footer .container .links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .container .links .left{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-top: 45px;
+}
+footer .container .links .left .text{
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    display: flex;
+    gap: 16px;
+}
+footer .container .links .left .logo{
+    display: flex;
+    gap: 8px;
+    width: 100%;
+    height: fit-content;
 }
