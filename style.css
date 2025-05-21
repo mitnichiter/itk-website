@@ -1,0 +1,1465 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+
+body {
+    background-color: #F6F8FB;
+}
+
+nav {
+    background-color: #f2f2f2;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+
+}
+
+nav .link ul {
+    display: flex;
+    list-style: none;
+    font-size: 14px;
+}
+
+nav .link ul li {
+    margin: 0 20px;
+
+}
+
+nav .link ul li a {
+    text-decoration: none;
+    color: black;
+    color: gray;
+}
+
+nav .link ul li a:hover {
+    color: black;
+}
+
+nav .buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px
+}
+
+nav .buttons .login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 102px;
+    height: 40px;
+    background-color: white;
+    border-radius: 25px;
+    font-size: 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav .buttons .login:hover {
+    background-color: #e4f3ff;
+    /* slight change */
+    color: #00296a;
+    /* make it pop */
+}
+
+nav .buttons .gsff {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 192px;
+    height: 40px;
+    background-color: #00296a;
+    color: white;
+    border-radius: 25px;
+    font-size: 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav .buttons .gsff:hover {
+    background-color: #1a3d8f;
+    /* slight change */
+    color: #e4f3ff;
+    /* make it pop */
+}
+
+.hero {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 155px;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    background: linear-gradient(to bottom left,
+            rgba(140, 179, 255, 0.8),
+            rgba(228, 243, 255, 0.8));
+    overflow: hidden;
+    /* hides any overflow from ::before */
+    z-index: 0;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url('/content/svg/bgshi.svg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.6;
+    z-index: -1;
+}
+
+.hero .text {
+    width: 770px;
+    flex: 0 0 60%;
+}
+
+.hero .text .headings h1 {
+    font-size: 50px;
+    color: #163A67;
+
+}
+
+.hero .text .headings h2 {
+    font-size: 24px;
+    color: #1256AC;
+    padding-top: 20px;
+    font-weight: 400;
+}
+
+/* .hero .text .info{
+    
+} */
+.hero .text .info p {
+    font-size: 15px;
+    color: gray;
+    padding-top: 20px;
+}
+
+.hero .text .info .buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 24px;
+    text-align: center;
+
+}
+
+.hero .text .info .buttons a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.hero .text .info .buttons .gsffh {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 208px;
+    background-color: #00296a;
+    color: white;
+    height: 44px;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: 500;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.hero .text .info .buttons .gsffh:hover {
+    background-color: #1a3d8f;
+    color: #e4f3ff;
+}
+
+.hero .text .info .buttons .fyp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 208px;
+    background-color: #fff;
+    color: #00296a;
+    height: 44px;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: 500;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.hero .text .info .buttons .fyp:hover {
+    background-color: #e4f3ff;
+    color: #00296a;
+}
+
+.hero .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 770px;
+    flex: 0 0 40%;
+}
+
+
+.info1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.info1 .cardSection {
+    display: flex;
+    width: 1296px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: max-content;
+    padding-top: 80px;
+}
+
+.info1 .cardSection .text h1 {
+    font-size: 36px;
+    color: #00296a;
+    font-weight: bold;
+}
+
+.info1 .cardSection .text p {
+    font-size: 15px;
+    color: gray;
+    padding-top: 20px;
+    display: flex;
+    text-align: center;
+
+}
+
+.info1 .cardcontainer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 1296px;
+    height: max-content;
+    padding-top: 47px;
+}
+
+.info1 .cardcontainer .card {
+    width: 306px;
+    height: 300px;
+    background-color: #E4F3FF;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 35px;
+    transition: all 0.3s ease;
+}
+
+.info1 .cardcontainer .card h1 {
+    color: #00296a;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    text-align: left;
+    font-size: 22px;
+}
+
+.info1 .cardcontainer .card p {
+    color: #00296a;
+    padding-top: 20px;
+    font: 14px;
+    text-align: left;
+    width: 225px;
+}
+
+.info1 .cardcontainer .card:hover {
+    background-color: #00296a;
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.info1 .cardcontainer .card:hover h1 {
+    color: #E4F3FF;
+}
+
+.info1 .cardcontainer .card:hover p {
+    color: #E4F3FF;
+}
+
+.info1 .cardcontainer .card:hover img {
+    filter: invert(1);
+}
+
+.info1 .featuresection {
+    color: #00296a;
+    width: 1285px;
+    padding-top: 76px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.info1 .featuresection .textsection .headings h1 {
+    font-size: 36px;
+    color: #101820;
+}
+
+.info1 .featuresection .textsection .headings p {
+    padding-top: 5px;
+    font-size: 24px;
+    color: #1256AC;
+}
+
+.info1 .featuresection .textsection .features {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 1285px;
+    height: 102px;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+
+.info1 .featuresection .textsection .features .ftext {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.info1 .featuresection .textsection .features .ftext img {
+    padding: 0 10px;
+}
+
+
+.info1 .featuresection .gsffh {
+    margin-top: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 208px;
+    background-color: #00296a;
+    color: white;
+    height: 44px;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: 500;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-bottom: 80px;
+}
+
+.info1 .featuresection .gsffh:hover {
+    background-color: #1a3d8f;
+    color: #e4f3ff;
+}
+
+
+.appfeatures {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 100px;
+    width: 100%;
+    text-align: center;
+    background-color: #09203D;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.appfeatures::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url('/content/svg/bgshi.svg');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.appfeatures .gcircle {
+    position: absolute;
+    width: 582px;
+    height: 582px;
+    border-radius: 50%;
+    background-color: #1256AC;
+    filter: blur(190px);
+    z-index: -10;
+    margin-left: 25%;
+    margin-top: 20%;
+
+}
+
+.appfeatures .textsection {
+    display: flex;
+    width: 891px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.appfeatures .textsection h1 {
+    color: white;
+    font-size: 45px;
+
+}
+
+.appfeatures .textsection h1 span {
+    color: #8DC0F0;
+}
+
+.appfeatures .textsection p {
+    font-size: 24px;
+    color: white;
+    padding-top: 17px;
+}
+
+.appfeatures .infographic {
+    display: flex;
+    width: 1471px;
+    align-self: flex-end;
+    justify-content: space-between;
+    padding-top: 53px;
+
+}
+
+.appfeatures .infographic .textarea {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 55px;
+    margin-top: 135px;
+}
+
+.appfeatures .infographic .textarea h1 {
+    font-size: 22px;
+    color: #FDFDFF;
+    padding-bottom: 18px;
+}
+
+.appfeatures .infographic .textarea p {
+    font-size: 16px;
+    color: #FDFDFF;
+}
+
+.appfeatures .infographic .textarea .buttonarea {
+    padding-top: 95px;
+}
+
+.appfeatures .infographic .textarea .buttonarea .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 306px;
+    background-color: #FFF;
+    color: #09203D;
+    height: 44px;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: 500;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.appfeatures .infographic .textarea .buttonarea .button:hover {
+    background-color: #a9c5e0;
+
+}
+
+
+.appfeatures .infographic .textarea .buttonarea ul {
+    padding-bottom: 100px;
+    padding-top: 20px;
+    padding-left: 15px;
+}
+
+.appfeatures .infographic .textarea .buttonarea ul li {
+    text-align: left;
+    font-size: 12px;
+    color: #8DC0F0;
+    line-height: 24px;
+
+}
+
+.bigas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bigas .technology {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 75px;
+}
+
+.bigas .technology .textarea h1 {
+    text-align: center;
+    font-size: 36px;
+
+}
+
+.bigas .technology .textarea p {
+    text-align: center;
+    font-size: 16px;
+    padding-top: 19px;
+    padding-bottom: 48px;
+}
+
+
+
+.bigas .card-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 2fr 4fr 1fr 2fr;
+    grid-template-rows: 250px 250px;
+    grid-template-areas:
+        "one two two three"
+        "one four five five"
+        "one four five five";
+    width: 1297px;
+    height: 532px;
+    margin-bottom: 76px;
+}
+
+.bigas .card-grid .card1 {
+    grid-area: one;
+    background: radial-gradient(92.26% 126.21% at 50% 50%, #1B4983 0%, #000204 100%);
+}
+
+.bigas .card-grid .card2 {
+    grid-area: two;
+    background: linear-gradient(261deg, #8DC0F0 2.89%, #C1DDF6 100%);
+}
+
+.bigas .card-grid .card3 {
+    grid-area: three;
+    background: linear-gradient(56deg, #101820 1.67%, #12304D 98.97%);
+}
+
+.bigas .card-grid .card4 {
+    grid-area: four;
+    background: linear-gradient(257deg, #1256AC 28.59%, #05336D 100.6%);
+}
+
+.bigas .card-grid .card5 {
+    grid-area: five;
+    background: linear-gradient(291deg, #AAD6FF 0%, #69B7FF 98.18%);
+}
+
+.bigas .card-grid .card {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-radius: 12px;
+}
+
+.bigas .card-grid .card .number {
+    margin: 8px 0 0 8px;
+    width: 33px;
+    height: 33px;
+    padding: 4.5px 7px;
+    border-radius: 22px;
+    align-self: flex-start;
+    position: absolute;
+    z-index: 10;
+    justify-self: flex-start;
+    color: white;
+    font-size: 16px;
+    font-family: Roboto;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+}
+
+
+
+.bigas .card-grid .card1 {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.bigas .card-grid .card1 .number {
+    background: rgba(141, 192, 240, 0.20);
+}
+
+.bigas .card-grid .card1 .ic {
+    display: flex;
+    width: 304px;
+    height: 228px;
+    margin-top: 38px;
+    justify-content: center;
+    align-items: center;
+    mix-blend-mode: overlay;
+}
+
+.bigas .card-grid .card1 h1 {
+    color: #FDFDFF;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+    padding-left: 24px;
+    padding-top: 5px;
+}
+
+.bigas .card-grid .card1 p {
+    color: #FDFDFF;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+    padding-left: 24px;
+    padding-top: 17px;
+}
+
+.bigas .card-grid .card1 .button {
+    height: 40px;
+    width: fit-content;
+    padding: 10px 24px;
+    margin: 22px 0 0 24px;
+    color: #FDFDFF;
+    border-radius: 100px;
+    border: 1px solid #1256AC;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s, transform 0.3s;
+}
+
+.bigas .card-grid .card1 .button:hover {
+    background-color: #8DC0F0;
+    color: #101820;
+    border-color: #8DC0F0;
+    transform: translateY(-4px) scale(1.05);
+}
+
+
+.bigas .card-grid .card2 {
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+.bigas .card-grid .card2 .ic {
+    width: 255px;
+    height: 254px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bigas .card-grid .card2 h1 {
+    color: #101820;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+}
+
+.bigas .card-grid .card2 .textarea p {
+    color: #101820;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+    padding: 15px 0 21px 0;
+}
+
+.bigas .card-grid .card2 .textarea .button {
+    height: 40px;
+    width: fit-content;
+    padding: 10px 24px;
+    color: #101820;
+    border-radius: 100px;
+    border: 1px solid #1256AC;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s, transform 0.3s;
+}
+
+.bigas .card-grid .card2 .textarea .button:hover {
+    background-color: #1256AC;
+    color: #E4F3FF;
+    border-color: #8DC0F0;
+    transform: translateY(-4px) scale(1.05);
+}
+
+
+.bigas .card-grid .card2 .number {
+    background: rgba(76, 113, 148, 0.25);
+}
+
+.bigas .card-grid .card:nth-child(3) {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.bigas .card-grid .card3 .number {
+    background: rgba(0, 132, 255, 0.2);
+    margin: 8px 8px 0 auto;
+}
+
+.bigas .card-grid .card3 .textarea {
+    text-align: left;
+}
+
+.bigas .card-grid .card3 .textarea h1 {
+    color: #FDFDFF;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+}
+
+.bigas .card-grid .card3 .textarea p {
+    color: #FDFDFF;
+    width: 248px;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+    padding-top: 15px;
+    padding-bottom: 23px;
+}
+
+.bigas .card-grid .card3 .textarea .button {
+    height: 40px;
+    width: fit-content;
+    padding: 10px 24px;
+    color: #FDFDFF;
+    border-radius: 100px;
+    border: 1px solid #8DC0F0;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s, transform 0.3s;
+}
+
+.bigas .card-grid .card3 .textarea .button:hover {
+    background-color: #8DC0F0;
+    color: #101820;
+    border-color: #8DC0F0;
+    transform: translateY(-4px) scale(1.05);
+}
+
+
+.bigas .card-grid .card4 {
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+.bigas .card-grid .card4 .ic {
+    width: 196px;
+    height: 164px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-right: 23px;
+    mix-blend-mode: color-dodge;
+}
+
+.bigas .card-grid .card4 .textarea h1 {
+    color: #FDFDFF;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+    text-align: left;
+}
+
+.bigas .card-grid .card4 .textarea p {
+    color: #FDFDFF;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+    padding-top: 15px;
+    padding-bottom: 23px;
+    text-align: left;
+}
+
+.bigas .card-grid .card4 .textarea .button {
+    height: 40px;
+    width: fit-content;
+    padding: 10px 24px;
+    color: #FDFDFF;
+    border-radius: 100px;
+    border: 1px solid #8DC0F0;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s, transform 0.3s;
+}
+
+.bigas .card-grid .card4 .textarea .button:hover {
+    background-color: #8DC0F0;
+    color: #101820;
+    border-color: #8DC0F0;
+    transform: translateY(-4px) scale(1.05);
+}
+
+.bigas .card-grid .card4 .number {
+
+    background: rgba(141, 192, 240, 0.20);
+}
+
+.bigas .card-grid .card5 {
+    display: flex;
+    align-items: center;
+}
+
+.bigas .card-grid .card5 .textarea {
+    padding-left: 50px;
+}
+
+.bigas .card-grid .card5 .textarea h1 {
+    color: #101820;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+    text-align: left;
+}
+
+.bigas .card-grid .card5 .textarea p {
+    color: #101820;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+    padding-top: 15px;
+    padding-bottom: 23px;
+    text-align: left;
+}
+
+.bigas .card-grid .card5 .textarea .button {
+    height: 40px;
+    width: fit-content;
+    padding: 10px 24px;
+    color: #101820;
+    border-radius: 100px;
+    border: 1px solid #1256AC;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s, transform 0.3s;
+}
+
+.bigas .card-grid .card5 .textarea .button:hover {
+    background-color: #1256AC;
+    color: #E4F3FF;
+    border-color: #8DC0F0;
+    transform: translateY(-4px) scale(1.05);
+}
+
+.bigas .card-grid .card5 .number {
+    background: rgba(76, 113, 148, 0.20);
+}
+
+
+.bigas .pricing {
+    padding-bottom: 76px;
+}
+
+.bigas .pricing .textarea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bigas .pricing .textarea>h1 {
+    color: #101820;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 44px;
+    text-align: center;
+}
+
+.bigas .pricing .textarea>p {
+    color: #888E95;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    padding-top: 19px;
+    padding-bottom: 35px;
+}
+
+.bigas .pricing .textarea .buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.bigas .pricing .textarea .buttons a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.bigas .pricing .textarea .buttons .gsffh {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 208px;
+    background-color: #00296a;
+    color: white;
+    height: 44px;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: 500;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.bigas .pricing .textarea .buttons .gsffh:hover {
+    background-color: #1a3d8f;
+    color: #e4f3ff;
+}
+
+.bigas .pricing .textarea .buttons .fyp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 208px;
+    background-color: #fff;
+    color: #00296a;
+    height: 44px;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: 500;
+    border: 1px solid hsla(210, 7%, 18%, 0.218);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.bigas .pricing .textarea .buttons .fyp:hover {
+    background-color: #e4f3ff;
+    color: #00296a;
+}
+
+.bigas .pricing .textarea .toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0 0 0;
+    margin-bottom: 65px;
+}
+
+.bigas .pricing .textarea .toggle p {
+    padding: 0 24px;
+}
+
+.bigas .pricing .textarea .toggle .switch {
+    position: relative;
+    display: inline-block;
+    width: 52px;
+    height: 32px;
+
+}
+
+.bigas .pricing .textarea .toggle .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.bigas .pricing .textarea .toggle .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    border: 2px solid #888E95;
+    transition: all .2s ease-in;
+    border-radius: 34px;
+}
+
+.bigas .pricing .textarea .toggle .slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 6px;
+    bottom: 6.5px;
+    background-color: #888E95;
+    transition: all .2s ease-in;
+    border-radius: 50%;
+}
+
+.bigas .pricing .textarea .toggle input:checked+.slider:before {
+    transform: translateX(22px);
+    background-color: #163A67;
+}
+
+.bigas .pricing .textarea .toggle input:checked+.slider {
+    border-color: #163A67;
+}
+
+.bigas .pricing .cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px
+}
+
+.bigas .pricing .cards .free {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 416.33px;
+    height: 681px;
+    border-radius: 12px;
+    background-color: white;
+}
+
+
+.bigas .pricing .cards .free .container {
+    padding-left: 24px;
+}
+
+.bigas .pricing .cards .free .container .header h1 {
+    color: #101820;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    margin-top: 50px;
+}
+
+.bigas .pricing .cards .free .container .header p {
+    color: #888E95;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+}
+
+.bigas .pricing .cards .free .container .pndb {
+    padding-bottom: 44px;
+}
+
+.bigas .pricing .cards .free .container .pndb p {
+    color: #888E95;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 24px;
+    padding-top: 20px;
+}
+
+.bigas .pricing .cards .free .container .pndb p span {
+    color: #191D23;
+    font-size: 57px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px;
+    letter-spacing: -0.25px;
+    padding-right: 10px;
+}
+
+
+
+.bigas .pricing .cards .free .container .pndb .gsffh {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 368px;
+    background-color: #ffffff;
+    color: #163A67;
+    height: 43px;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: 500;
+    border: 1px solid #163A67;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.bigas .pricing .cards .free .container .pndb .gsffh:hover {
+    background-color: #1a3d8f;
+    color: #e4f3ff;
+}
+
+.bigas .pricing .cards .free .bottom {
+    margin-left: 24px;
+}
+
+.bigas .pricing .cards .free .bottom ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.bigas .pricing .cards .free .bottom ul li {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 0 0 12px 0;
+}
+
+.bigas .pricing .cards .free .bottom ul li img {
+    padding-right: 17px;
+    height: 32px;
+}
+
+.bigas .pricing .cards .free .bottom ul li .on {
+    color: #101820;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+}
+
+.bigas .pricing .cards .free .bottom ul li .off {
+    color: #888E95;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    color: var(--Brand-Color-Silver, #888E95);
+}
+
+
+.bigas .pricing .cards .pro {
+    display: flex;
+    flex-direction: column;
+    width: 416.33px;
+    height: 681px;
+    border-radius: 12px;
+    border-radius: 16px;
+    background: #1256AC;
+    box-shadow: 0px 10px 25px 0px #CCD9FF;
+}
+
+.bigas .pricing .cards .pro .r {
+    display: flex;
+    width: 417px;
+    padding: 4px 8px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px 12px 0px 0px;
+    background: var(--Brand-Color-Deep-Blue, #163A67);
+    box-shadow: 0px 2px 5px 0px rgba(24, 59, 86, 0.25);
+    color: #fff;
+}
+
+.bigas .pricing .cards .pro .container {
+    padding-left: 24px;
+}
+
+.bigas .pricing .cards .pro .container .header h1 {
+    color: #ffffff;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    margin-top: 50px;
+}
+
+.bigas .pricing .cards .pro .container .header p {
+    color: #ffffff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+}
+
+.bigas .pricing .cards .pro .container .pndb {
+    padding-bottom: 44px;
+}
+
+.bigas .pricing .cards .pro .container .pndb p {
+    color: #ffffff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 24px;
+    padding-top: 20px;
+}
+
+.bigas .pricing .cards .pro .container .pndb p span {
+    color: #ffffff;
+    font-size: 57px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px;
+    letter-spacing: -0.25px;
+    padding-right: 10px;
+}
+
+
+
+.bigas .pricing .cards .pro .container .pndb .gsffh {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 368px;
+    background-color: #ffffff;
+    color: #163A67;
+    height: 43px;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: 500;
+    border: 1px solid #163A67;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.bigas .pricing .cards .pro .container .pndb .gsffh:hover {
+    background-color: #e4f3ff;
+    color: #1a3d8f;
+}
+
+.bigas .pricing .cards .pro .bottom {
+    margin-left: 24px;
+}
+
+.bigas .pricing .cards .pro .bottom ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.bigas .pricing .cards .pro .bottom ul li {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 0 0 12px 0;
+}
+
+.bigas .pricing .cards .pro .bottom ul li img {
+    padding-right: 17px;
+    height: 32px;
+}
+
+.bigas .pricing .cards .pro .bottom ul li .on {
+    color: #ffffff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+}
+
+.bigas .pricing .cards .pro .bottom ul li .off {
+    color: #ffffff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+}
+
+.bigas .pricing .cards .enterprise {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 416.33px;
+    height: 681px;
+    border-radius: 12px;
+    background-color: white;
+}
+
+.bigas .pricing .cards .enterprise .container {
+    padding-left: 24px;
+
+}
+
+.bigas .pricing .cards .enterprise .container .header h1 {
+    color: #101820;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    margin-top: 50px;
+}
+
+.bigas .pricing .cards .enterprise .container .header p {
+    color: #888E95;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+}
+
+.bigas .pricing .cards .enterprise .container .pndb {
+    padding-bottom: 44px;
+}
+
+.bigas .pricing .cards .enterprise .container .pndb p {
+    color: #888E95;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 24px;
+    padding-top: 20px;
+}
+
+.bigas .pricing .cards .enterprise .container .pndb p span {
+    color: #191D23;
+    font-size: 57px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px;
+    letter-spacing: -0.25px;
+    padding-right: 10px;
+}
+
+
+
+.bigas .pricing .cards .enterprise .container .pndb .gsffh {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 368px;
+    background-color: #ffffff;
+    color: #163A67;
+    height: 43px;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: 500;
+    border: 1px solid #163A67;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.bigas .pricing .cards .enterprise .container .pndb .gsffh:hover {
+    background-color: #1a3d8f;
+    color: #e4f3ff;
+}
+
+.bigas .pricing .cards .enterprise .bottom {
+    margin-left: 24px;
+}
+
+.bigas .pricing .cards .enterprise .bottom ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.bigas .pricing .cards .enterprise .bottom ul li {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 0 0 12px 0;
+}
+
+.bigas .pricing .cards .enterprise .bottom ul li img {
+    padding-right: 17px;
+    height: 32px;
+}
+
+.bigas .pricing .cards .enterprise .bottom ul li .on {
+    color: #101820;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+}
+
+.bigas .pricing .cards .enterprise .bottom ul li .off {
+    color: #888E95;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    color: var(--Brand-Color-Silver, #888E95);
+}
+
+footer .ad {
+    background: linear-gradient(155deg, rgba(140, 179, 255, 0.80) -19.81%, rgba(228, 243, 255, 0.80) 80.99%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+footer .ad h1 {
+    padding-top: 60px;
+    padding-bottom: 16px;
+    color: #163A67;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 44px;
+}
+
+footer .ad p {
+    color: #1256AC;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+footer .ad .gsffh {
+    margin-top: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 208px;
+    background-color: #00296a;
+    color: white;
+    height: 44px;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: 500;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-bottom: 60px;
+    margin-top: 28px;
+}
+
+
+footer .ad .gsffh:hover {
+    background-color: #1a3d8f;
+    color: #e4f3ff;
+}
+footer .mango{
+    background: linear-gradient(178deg, #09203D 64.05%, #1956A3 242.38%);
+    width: 100%;
+}
+
