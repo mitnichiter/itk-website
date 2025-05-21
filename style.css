@@ -1408,7 +1408,7 @@ nav .buttons .gsff:hover {
     color: var(--Brand-Color-Silver, #888E95);
 }
 
-footer .ad {
+.ad {
     background: linear-gradient(155deg, rgba(140, 179, 255, 0.80) -19.81%, rgba(228, 243, 255, 0.80) 80.99%);
     display: flex;
     justify-content: center;
@@ -1417,7 +1417,7 @@ footer .ad {
 
 }
 
-footer .ad h1 {
+.ad h1 {
     padding-top: 60px;
     padding-bottom: 16px;
     color: #163A67;
@@ -1427,7 +1427,7 @@ footer .ad h1 {
     line-height: 44px;
 }
 
-footer .ad p {
+.ad p {
     color: #1256AC;
     text-align: center;
     font-size: 24px;
@@ -1436,7 +1436,7 @@ footer .ad p {
     line-height: 32px;
 }
 
-footer .ad .gsffh {
+.ad .gsffh {
     margin-top: 46px;
     display: flex;
     justify-content: center;
@@ -1454,12 +1454,77 @@ footer .ad .gsffh {
 }
 
 
-footer .ad .gsffh:hover {
+.ad .gsffh:hover {
     background-color: #1a3d8f;
     color: #e4f3ff;
 }
-footer .mango{
+
+footer .mango {
     background: linear-gradient(178deg, #09203D 64.05%, #1956A3 242.38%);
     width: 100%;
+    height: 577px;
+}
+footer .mango .container{
+    width:1283px;
+    margin: 0 auto;
 }
 
+footer .mango .container .newsletter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 64px 0;
+}
+footer .mango .container .newsletter h1{
+    color: #FFF;
+
+font-size: 28px;
+font-style: normal;
+font-weight: 700;
+line-height: 36px;
+}
+
+footer .mango .container .newsletter .newsletter-input {
+    display: flex;
+    gap: 8px;
+
+}
+
+footer .mango .container .newsletter .newsletter-input input[type="email"] {
+    padding: 9px 16px;
+    border-radius: 10px;
+    border: 1px solid #b3b3b36b;
+    background-color: transparent;
+    color: #fff;
+    width: 300px;
+    outline: none;
+    font-size: 16px;
+    width: 315px;
+    height: 46px;
+
+}
+
+footer .mango .container .newsletter .newsletter-input input::placeholder {
+    color: #9bb4d3;
+}
+
+footer .mango .container .newsletter .newsletter-input button {
+    border: none;
+    color: white;
+    width: 147px;
+    height: 44px;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 100px;
+    background: #1256AC;
+}
+
+footer .mango .container .newsletter .newsletter-input button:hover {
+    background-color: #1664c4;
+}
+footer .mango .container hr{
+    border-color: #ffffff2e;
+    height: 1px;
+}
